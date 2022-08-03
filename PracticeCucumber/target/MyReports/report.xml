@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="26.649">
+    <testcase classname="Accounts page features" name="Accounts page title" time="14.56">
+        <system-out><![CDATA[Given user is already logged in.............................................passed
+Given user is on the accounts page..........................................passed
+When user gets the title of the page........................................passed
+Then page title should be "My account - My Store"...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Accounts page features" name="Accounts page section count" time="11.879">
+        <failure message="Cannot invoke &quot;com.pages.AccountsPage.accountFeatures()&quot; because &quot;this.accountsPage&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given user is already logged in.............................................passed
+Given user is on the accounts page..........................................passed
+Then user gets the accounts section.........................................failed
+And the accounts section counts should be 6.................................skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "com.pages.AccountsPage.accountFeatures()" because "this.accountsPage" is null
+	at stepdefinitions.AccountsPageSteps.user_gets_the_accounts_section(AccountsPageSteps.java:63)
+	at ✽.user gets the accounts section(file:///C:/Users/Asus/eclipse-workspace/PracticeCucumber/src/test/resources/features/Accounts.feature:18)
+]]></failure>
+    </testcase>
+</testsuite>
